@@ -12,6 +12,8 @@
 
 #define APP_SRAM __not_in_flash("app")
 
+const char FIRMWARE_NAME[] = "-- PAF synth CARL --";
+
 display APP_SRAM scr;
 
 bool core1_disable_systick = true;
@@ -115,7 +117,7 @@ void setup()
         delay(1);
     }
 
-    scr.post("MEMLNaut: let's go!");
+    scr.post(FIRMWARE_NAME);
     add_repeating_timer_ms(-39, displayUpdate, NULL, &timerDisplay);
 
     Serial.println("Finished initialising core 0.");
