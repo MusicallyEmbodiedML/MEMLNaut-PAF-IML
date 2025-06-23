@@ -7,7 +7,7 @@
 #include <memory>
 #include "hardware/structs/bus_ctrl.h"
 #include "PAFSynthAudioApp.hpp"
-#include "src/memllib/interface/InterfaceRL.hpp"
+#include "src/memllib/examples/InterfaceRL.hpp"
 
 
 #define APP_SRAM __not_in_flash("app")
